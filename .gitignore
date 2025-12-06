@@ -5,3 +5,12 @@ venv/
 # Python compiled files
 __pycache__/
 *.pyc
+
+# --- Files to exclude to match Screenshot 1 ---
+
+# Exclude the data directory
+data/
+
+# Exclude the seed files
+decrypted_seed_test.txt
+encrypted_seed.txt
