@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8001:8001"
+    volumes:
+      - seed-data:/data
+      - cron-output:/cron
+    environment:
+      - TZ=UTC
+    restart: unless-stopped
+
+volumes:
+  seed-data:
+  cron-output:
